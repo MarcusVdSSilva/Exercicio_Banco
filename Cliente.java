@@ -34,7 +34,7 @@ private float saldo, vsaque, vdeposito;
     public void saque(){
         System.out.println("Quanto gostaria de sacar:");
         this.vsaque = sn.nextFloat();
-        if(vsaque < saldo && vsaque>0){
+        if(vsaque <= saldo && vsaque>0){
             this.saldo-=this.vsaque;
             System.out.println("Seu saldo atual é:" + this.saldo);
         }else{System.out.println("Valor invalido");}
